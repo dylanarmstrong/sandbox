@@ -9,7 +9,9 @@
   (regex
     #"^/Applications/Utilities/*"
     #"^/Applications/Adobe Photoshop CC 2018/Adobe Photoshop CC 2018.app/Contents/MacOS/LogTransport2.app/*"
+    #"^/Applications/Adobe Photoshop CC 2018/Adobe Photoshop CC 2018.app/Contents/Frameworks/AdobeCrashReporter.framework/Versions/A/AdobeCRDaemon.app/*"
     #"^/Applications/Adobe Lightroom Classic CC/Adobe Lightroom Classic CC.app/Contents/MacOS/LogTransport2.app/*"
+    #"^/Applications/Adobe Lightroom Classic CC/Adobe Lightroom Classic CC.app/Contents/Frameworks/AdobeCrashReporter.framework/Versions/A/AdobeCRDaemon.app/*"
   )
 )
 (allow default)
