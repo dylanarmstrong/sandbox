@@ -1,0 +1,15 @@
+(version 1)
+(deny file-write*
+  (regex
+    #"^/Users/asdf/Library/LaunchAgents/*"
+    #"^/Library/LaunchAgents/*"
+  )
+)
+(deny file-read*
+  (regex
+    #"^/Applications/Utilities/*"
+    #"^/Applications/Adobe Photoshop CC 2018/Adobe Photoshop CC 2018.app/Contents/MacOS/LogTransport2.app/*"
+    #"^/Applications/Adobe Lightroom Classic CC/Adobe Lightroom Classic CC.app/Contents/MacOS/LogTransport2.app/*"
+  )
+)
+(allow default)
