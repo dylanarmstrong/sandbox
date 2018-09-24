@@ -1,0 +1,14 @@
+(version 1)
+(deny file-write*
+  (regex
+    #"^/Users/[a-zA-Z0-9_]+/Library/LaunchAgents"
+  )
+  (subpath "/Library/LaunchAgents")
+)
+(deny file-read*
+  (regex
+    #"^/Users/[a-zA-Z0-9_]+/Library/Google/GoogleSoftwareUpdate/GoogleSoftwareUpdate.bundle"
+  )
+  (subpath "/Library/Google/GoogleSoftwareUpdate/GoogleSoftwareUpdate.bundle/")
+)
+(allow default)
