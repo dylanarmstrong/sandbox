@@ -4,19 +4,18 @@
     #"^/Users/[a-zA-Z0-9_]+/Library/LaunchAgents"
   )
   (subpath "/Library/LaunchAgents")
+  (subpath "/Library/LaunchDaemons")
+  (subpath "/Library/Preferences")
 )
 (deny file-read*
-  (regex
-    #"^/Library/Application Support/Adobe/AdobeGCClient/*"
-    #"^/Applications/Utilities/*"
-    #"^/Applications/Adobe Photoshop CC 2018.app/Contents/MacOS/LogTransport2.app/*"
-    #"^/Applications/Adobe Photoshop CC 2018.app/Contents/Frameworks/AdobeCrashReporter.framework/Versions/A/AdobeCRDaemon.app/*"
-    #"^/Applications/Adobe Photoshop CC 2018/Adobe Photoshop CC 2018.app/Contents/MacOS/LogTransport2.app/*"
-    #"^/Applications/Adobe Photoshop CC 2018/Adobe Photoshop CC 2018.app/Contents/Frameworks/AdobeCrashReporter.framework/Versions/A/AdobeCRDaemon.app/*"
-    #"^/Applications/Adobe Lightroom Classic CC.app/Contents/MacOS/LogTransport2.app/*"
-    #"^/Applications/Adobe Lightroom Classic CC.app/Contents/Frameworks/AdobeCrashReporter.framework/Versions/A/AdobeCRDaemon.app/*"
-    #"^/Applications/Adobe Lightroom Classic CC/Adobe Lightroom Classic CC.app/Contents/MacOS/LogTransport2.app/*"
-    #"^/Applications/Adobe Lightroom Classic CC/Adobe Lightroom Classic CC.app/Contents/Frameworks/AdobeCrashReporter.framework/Versions/A/AdobeCRDaemon.app/*"
-  )
+  (subpath "/Applications/Adobe Lightroom Classic CC/Adobe Lightroom Classic CC.app/Contents/Frameworks/AdobeCrashReporter.framework/")
+  (subpath "/Applications/Adobe Lightroom Classic CC/Adobe Lightroom Classic CC.app/Contents/MacOS/LogTransport2.app/")
+  (subpath "/Applications/Adobe Lightroom Classic CC/Adobe Lightroom Classic CC.app/Contents/PlugIns/Adobe Crash Reporter.bundle/")
+  (subpath "/Applications/Adobe Lightroom Classic CC/Adobe Lightroom Classic CC.app/Contents/PlugIns/Facebook.lrplugin/")
+  (subpath "/Applications/Adobe Lightroom Classic CC/Adobe Lightroom Classic CC.app/Contents/PlugIns/Flickr.lrplugin/")
+  (subpath "/Applications/Adobe Photoshop CC 2018/Adobe Photoshop CC 2018.app/Contents/Frameworks/AdobeCrashReporter.framework/")
+  (subpath "/Applications/Adobe Photoshop CC 2018/Adobe Photoshop CC 2018.app/Contents/MacOS/LogTransport2.app/")
+  (subpath "/Applications/Utilities/")
+  (subpath "/Library/Application Support/Adobe/AdobeGCClient/")
 )
 (allow default)
