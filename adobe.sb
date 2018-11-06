@@ -6,6 +6,7 @@
   (subpath "/Library/LaunchAgents")
   (subpath "/Library/LaunchDaemons")
   (subpath "/Library/Preferences")
+  (subpath "/Library/PrivilegedHelperTools")
 )
 (deny file-read*
   (subpath "/Applications/Adobe Lightroom Classic CC/Adobe Lightroom Classic CC.app/Contents/Frameworks/AdobeCrashReporter.framework/")
